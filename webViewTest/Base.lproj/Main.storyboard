@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,17 +22,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-wQ-K04">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-wQ-K04">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AfJ-Dn-XMG">
-                                <rect key="frame" x="177" y="299" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AfJ-Dn-XMG">
+                                <rect key="frame" x="178" y="300" width="19" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y3e-wQ-K04" secondAttribute="trailing" id="0UY-WW-Qs8"/>
+                            <constraint firstItem="AfJ-Dn-XMG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="162" id="BPx-xJ-MRJ"/>
+                            <constraint firstItem="AfJ-Dn-XMG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="280" id="Fau-WU-jWb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AfJ-Dn-XMG" secondAttribute="trailing" constant="162" id="Ff0-I1-xyU"/>
+                            <constraint firstItem="y3e-wQ-K04" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sSq-TG-Us2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y3e-wQ-K04" secondAttribute="bottom" id="sg7-b8-jb4"/>
+                            <constraint firstItem="y3e-wQ-K04" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uz7-Ef-1Wi"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Ave-5g-rlg"/>
                     <connections>
@@ -55,17 +63,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EV3-oq-uVN">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EV3-oq-uVN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-xe-QtC">
-                                <rect key="frame" x="177" y="299" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-xe-QtC">
+                                <rect key="frame" x="178" y="300" width="19" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rg3-xe-QtC" firstAttribute="top" secondItem="veM-Vk-ckT" secondAttribute="bottom" constant="280" id="BOx-de-Ujk"/>
+                            <constraint firstAttribute="trailing" secondItem="EV3-oq-uVN" secondAttribute="trailing" id="HIS-jo-k6a"/>
+                            <constraint firstItem="EV3-oq-uVN" firstAttribute="leading" secondItem="sVy-VI-W57" secondAttribute="leading" id="OQ0-5d-LY2"/>
+                            <constraint firstItem="fUt-db-uSV" firstAttribute="top" secondItem="EV3-oq-uVN" secondAttribute="bottom" id="YFf-Le-zLb"/>
+                            <constraint firstItem="EV3-oq-uVN" firstAttribute="top" secondItem="sVy-VI-W57" secondAttribute="top" id="aJ4-5x-bJg"/>
+                            <constraint firstItem="rg3-xe-QtC" firstAttribute="leading" secondItem="sVy-VI-W57" secondAttribute="leadingMargin" constant="162" id="bey-kT-VH1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rg3-xe-QtC" secondAttribute="trailing" constant="162" id="dr9-dO-KLI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="FZb-Nj-qQy"/>
                     <connections>
@@ -89,17 +104,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rds-gd-EDD">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rds-gd-EDD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mIc-PF-f2G">
-                                <rect key="frame" x="177" y="299" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mIc-PF-f2G">
+                                <rect key="frame" x="178" y="300" width="19" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rds-gd-EDD" firstAttribute="leading" secondItem="5bn-o9-kDJ" secondAttribute="leading" id="Dfm-0e-R5M"/>
+                            <constraint firstAttribute="trailing" secondItem="rds-gd-EDD" secondAttribute="trailing" id="HxZ-06-0bC"/>
+                            <constraint firstItem="mIc-PF-f2G" firstAttribute="leading" secondItem="5bn-o9-kDJ" secondAttribute="leadingMargin" constant="162" id="JhB-Mq-h3d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mIc-PF-f2G" secondAttribute="trailing" constant="162" id="Zrw-yC-R1N"/>
+                            <constraint firstItem="rds-gd-EDD" firstAttribute="top" secondItem="5bn-o9-kDJ" secondAttribute="top" id="rMT-jh-qWk"/>
+                            <constraint firstItem="mIc-PF-f2G" firstAttribute="top" secondItem="nET-RW-Rvv" secondAttribute="bottom" constant="280" id="tMa-qY-KUI"/>
+                            <constraint firstItem="LHf-cx-Ytb" firstAttribute="top" secondItem="rds-gd-EDD" secondAttribute="bottom" id="u8M-if-6MR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="t6o-P8-5CK"/>
                     <connections>
