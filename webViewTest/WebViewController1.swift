@@ -19,20 +19,26 @@ class WebViewController1: UIViewController, UIWebViewDelegate {
         
         webView.delegate = self
         
-        let url = URL(string: "http://qiita.com/nori0620/items/66ebc623f63fc3f0ca20")
+        let url = URL(string: "http://10.125.72.136/redmine/my/page")
         let urlRequest = URLRequest(url: url!)
         webView.loadRequest(urlRequest)
+        
+        activityIndicator.isHidden = true
     }
     
     
     //webViewでサイトの読み込みが開始された際に勝手に呼ばれるメソッド
     func webViewDidStartLoad(_ webView: UIWebView) {
+        activityIndicator.isHidden = false
+        
         activityIndicator.stopAnimating()
     }
     
     
     //webViewでサイトの読み込みが完了した際に勝手に呼ばれるメソッド
     func webViewDidFinishLoad(_ webView: UIWebView) {
+        activityIndicator.isHidden = true
+        
         activityIndicator.stopAnimating()
     }
     
